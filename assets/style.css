@@ -49,6 +49,9 @@ header nav ul li {
 .hero-text {
     float: right;
     padding-top: 450px;
-    color: whitesmoke;
-    font-style: italic;
+    padding-right: 50px;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    z-index: 500;
 }

@@ -12,7 +12,7 @@ This page is fully accessible. The page follows an orderly structure (sequential
 
 ## Screenshot
 
-Here is a screenshot of the Horiseon web page!:
+Here is a screenshot of my portfolio page!:
 <img src="./assets/images/Portfolio Screenshot_Challenge2.png">
 
 ## Link to deployed application

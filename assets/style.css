@@ -1,6 +1,6 @@
 /* page-wide rules */
 :root {
-    --primary-color: #b4e0f0;
+    --primary-color: whitesmoke;
     --secondary-color: #22273d;
 }
 
@@ -9,7 +9,6 @@
     padding: 0px;
     margin: 0;
 }
-
 
 
 
@@ -53,15 +52,11 @@ header nav ul li {
 
 
 
-
-
-
-
 /* section rules */
 #hero {
-    height: 500px;
+    height: 400px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     background-image: url("../assets/images/hero-image.jpg");
     background-size: cover;
     background-position: center;
@@ -70,7 +65,7 @@ header nav ul li {
 
 .hero-text {
     float: right;
-    padding-top: 450px;
+    padding-top: 350px;
     padding-right: 50px;
     color: red;
     font-style: normal;
@@ -78,11 +73,118 @@ header nav ul li {
     z-index: 500;
 }
 
-.aboutme {
-    width: 100%;
-    height: 300px;
+
+
+/* testing from run-buddy 
+
+.section-title {
+    font-size: 48px;
+    color: #024376;
+    border-bottom: 3px solid;
+    border-color: #fce138;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%
 }
 
+.primary-border {
+    border-color: #fce138;
+}
+
+.flex-row {
+    display: flex;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+*/
+
+
+#aboutme {
+    width: 100%;
+    height: 300px;
+    margin: 10px 10px 10px 10px;
+}
+
+#work {
+    width: 100%;
+    height: 400px;
+    margin: 10px 10px 10px 10px;
+}
+
+#contactme {
+    width: 100%;
+    height: 100px;
+    margin: 10px 10px 10px 10px;
+}
+
+.aboutme-heading {
+    font-size: 24px;
+    line-height: 1;
+    color: var(--secondary-color);
+    border-right: 4px solid;
+    border-color: var(--secondary-color);
+    padding: 10px 20px 230px 10px;
+    margin: 30px 10px 30px 10px;
+    flex-wrap: wrap;
+    width: 15%;
+    float: left;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.aboutme-text {
+    width: 75%;
+    margin: 30px 150px 30px 10px;
+    padding: 10px 10px 50px 10px;
+    float: right;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.work-heading {
+    font-size: 24px;
+    line-height: 1;
+    color: var(--secondary-color);
+    border-right: 4px solid;
+    border-color: var(--secondary-color);
+    padding: 10px 20px 230px 10px;
+    margin: 30px 10px 30px 10px;
+    flex-wrap: wrap;
+    width: 15%;
+    float: left;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.contactme-heading {
+    font-size: 24px;
+    line-height: 1;
+    color: var(--secondary-color);
+    border-right: 4px solid;
+    border-color: var(--secondary-color);
+    padding: 10px 20px 230px 10px;
+    margin: 30px 10px 30px 10px;
+    flex-wrap: wrap;
+    width: 15%;
+    float: left;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.contactme-text {
+    width: 75%;
+    margin: 30px 150px 30px 10px;
+    padding: 10px 10px 50px 10px;
+    float: right;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* blocking out for now
 .work {
     width: 100%;
     height: 300px;
@@ -91,14 +193,6 @@ header nav ul li {
 .contactme {
     width: 100%;
     height: 300px;
-}
-
-.aboutme-heading {
-    width: 30%;
-    font-size: 20px;
-    margin: 0 auto;
-    float: left;
-    padding: 10px 10px 10px 10px;
 }
 
 .work-heading {
@@ -116,7 +210,7 @@ header nav ul li {
     float: left;
     padding: 10px 10px 10px 10px;
 }
-
+*/
 
 
 

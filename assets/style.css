@@ -36,12 +36,13 @@ body {
 header {
     padding: 20px;
     font-family: 'Open Sans', sans-serif;
-    background-color: transparent;
-    color: 
+    background-image: url("../assets/images/headerbg.jpg");
+    background-repeat: repeat;
 }
 
 header h1 {
-    font-size: 48px;
+    font-size: 44px;
+    color: var(--primary-color);
     display: inline-block;
     padding: 20px auto 20px 50px;
     margin: 20px auto 20px 150px;
@@ -52,12 +53,18 @@ header nav {
     padding-top: 15px;
     margin-right: 150px;
     float: right;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
+}
+
+header nav ul li a {
+    text-decoration: underline;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(black);
 }
 
 
@@ -102,12 +109,10 @@ header nav ul li {
 /* Class rules for targeted styling */
 .hero-text {
     float: right;
-    padding-top: 350px;
-    padding-right: 50px;
-    color: white;
+    padding: 350px 150px 50px 0px;
+    color: var(--primary-color);
     font-style: normal;
     font-weight: bold;
-    z-index: 500;
 }
 
 .aboutme-heading {
@@ -126,7 +131,7 @@ header nav ul li {
 }
 
 .aboutme-text {
-    width: 75%;
+    width: 70%;
     margin: 10px 150px 10px 10px;
     padding: 10px 10px 10px 10px;
     float: right;
@@ -188,7 +193,7 @@ header nav ul li {
     grid-template-rows: repeat(3, 1fr);
     gap: 10px 10px;
     height: 420px;
-    width: 75%;
+    width: 70%;
     margin: 10px 150px 10px 10px;
     padding: 20px 10px 10px 10px;
     float: right;
@@ -319,3 +324,89 @@ header nav ul li {
     font-size: 14px;
 }
 
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    
+    .aboutme-text {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+.aboutme-heading {
+    flex: 2 100%;
+}
+
+    #aboutme {
+        flex: 100%;  
+    }
+
+    .service-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .service-grid-item.basic {
+        grid-column: 1;
+    }
+    
+    .service-grid-item.both {
+        grid-column: 1 / -1;
+    }
+    
+    .service-grid-item.cancel {
+        transform: none;
+        writing-mode: unset;
+        grid-column: 1 / -1;
+        grid-row: -1;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .hero-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
+}

@@ -113,6 +113,7 @@ header nav ul li a {
     color: var(--primary-color);
     font-style: normal;
     font-weight: bold;
+    text-shadow: 0 0 10px var(black);
 }
 
 .aboutme-heading {
@@ -131,7 +132,7 @@ header nav ul li a {
 }
 
 .aboutme-text {
-    width: 70%;
+    width: 75%;
     margin: 10px 150px 10px 10px;
     padding: 10px 10px 10px 10px;
     float: right;
@@ -179,6 +180,9 @@ header nav ul li a {
     display: inline-flex;
     justify-content: space-evenly;
     justify-items: center;
+    text-decoration: underline;
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px var(black);
 }
 
 
@@ -193,7 +197,7 @@ header nav ul li a {
     grid-template-rows: repeat(3, 1fr);
     gap: 10px 10px;
     height: 420px;
-    width: 70%;
+    width: 75%;
     margin: 10px 150px 10px 10px;
     padding: 20px 10px 10px 10px;
     float: right;
@@ -334,79 +338,36 @@ header nav ul li a {
         padding: 30px 15px;
     }
 
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
-    }
-    
     .aboutme-text {
         flex: 2 100%;
         text-align: center;
         justify-content: center;
     }
     
-    .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
+    .aboutme-heading {
+        flex: 2 100%;
     }
-    
-.aboutme-heading {
-    flex: 2 100%;
-}
 
     #aboutme {
         flex: 100%;  
     }
 
-    .service-grid-container {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .service-grid-item.basic {
-        grid-column: 1;
-    }
-    
-    .service-grid-item.both {
-        grid-column: 1 / -1;
-    }
-    
-    .service-grid-item.cancel {
-        transform: none;
-        writing-mode: unset;
-        grid-column: 1 / -1;
-        grid-row: -1;
-    }
-}
-
 @media screen and (max-width: 575px) {
 
-    .hero-form button {
-      width: 100%;
-    }
-  
-    .section-title {
-      width: 95%;
-    }
-  
-    .intro p {
-      width: 100%;
-    }
-  
-    .trainer {
-      flex: 0 100%;
-    }
-  
-    .contact-info {
-      text-align: center;
-    }
-  
-    .contact-info > * {
-      flex: 0 100%;
+    section {
+        padding: 30px 15px;
     }
 
-    .contact-form {
-        order: 3;
+    .aboutme-text {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
     }
-}
+    
+    .aboutme-heading {
+        flex: 2 100%;
+    }
+
+    #aboutme {
+        flex: 100%;  
+    }

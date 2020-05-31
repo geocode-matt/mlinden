@@ -2,6 +2,7 @@
 :root {
     --primary-color: whitesmoke;
     --secondary-color: #22273d;
+    --tertiary-color: coral;
 }
 
 * {
@@ -42,11 +43,13 @@ header {
 header h1 {
     font-size: 48px;
     display: inline-block;
+    padding: 20px auto 20px 50px;
+    margin: 20px auto 20px 50px;
 }
 
 header nav {
     padding-top: 15px;
-    margin-right: 200px;
+    margin-right: 150px;
     float: right;
     font-size: 20px;
 }
@@ -68,7 +71,6 @@ header nav ul li {
     background-image: url("../assets/images/hero-image.jpg");
     background-size: cover;
     background-position: center;
-    opacity: .7;
 }
 
 #aboutme {
@@ -177,6 +179,7 @@ header nav ul li {
 /* Grid Container Styling */
 .grid-container {
     display: grid;
+    font-size: 24px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px 10px;
@@ -260,12 +263,15 @@ header nav ul li {
     border-radius: 10px;
     border-style: solid;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
     font-size: 24px;
 }
 
-.grid-container span {
-    background-color: lightgreen;
+.grid-container p {
+    background-color: var(--tertiary-color);
 }
 
+.grid-container span {
+    font-size: 14px;
+}
 

@@ -67,7 +67,7 @@ header nav ul li {
     float: right;
     padding-top: 350px;
     padding-right: 50px;
-    color: red;
+    color: white;
     font-style: normal;
     font-weight: bold;
     z-index: 500;
@@ -166,7 +166,7 @@ header nav ul li {
     color: var(--secondary-color);
     border-right: 4px solid;
     border-color: var(--secondary-color);
-    padding: 10px 20px 230px 10px;
+    padding: 10px 20px 40px 10px;
     margin: 30px 10px 30px 10px;
     flex-wrap: wrap;
     width: 15%;
@@ -175,14 +175,18 @@ header nav ul li {
     text-align: right;
 }
 
-.contactme-text {
+.contactme-text ul {
+    list-style: none;
+    font-size: 24px;
     width: 75%;
     margin: 30px 150px 30px 10px;
-    padding: 10px 10px 50px 10px;
+    padding: 30px 10px 30px 10px;
     float: right;
-    justify-content: flex-start;
-    flex-direction: column;
+    display: inline-flex;
+    justify-content: space-evenly;
+    justify-items: center;
 }
+
 
 /* blocking out for now
 .work {

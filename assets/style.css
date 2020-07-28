@@ -360,7 +360,7 @@ header nav ul li a {
     margin: 10px 20px 10px 20px;
 }
 
-#nav-resume {
+#nav-contact {
     margin-right: 100px;
 }
 
@@ -377,9 +377,9 @@ header nav ul li a {
     padding: 0 0 0 0;
 }
 
-#work {
+.projects {
     width: 100%;
-    height: 75vh;
+    height: 60vh;
     margin: 100px 0px 20px 0px;
     padding: 0 0 0 0;
 }
@@ -389,6 +389,7 @@ header nav ul li a {
     height: 100px;
     margin: 100px 0px 20px 0px;
     padding: 0 0 0 0;
+    justify-content: space-around;
 }
 
 .row {
@@ -427,7 +428,7 @@ header nav ul li a {
 }
 
 .contactme-text {
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
     font-weight: bold;
 }
@@ -442,6 +443,30 @@ header nav ul li a {
 
 .container {
     justify-content: space-between;
+}
+
+.card-heading-box-work {
+    border: none;
+    border-top-color: #212529;
+    border-top-style: solid;
+    border-top-width: medium;
+    border-radius: 0px;
+}
+
+.card-heading-work {
+    text-align: left;
+}
+
+.work-border {
+    border: none;
+    border-bottom-color: #212529;
+    border-bottom-style: solid;
+    border-bottom-width: medium;
+    border-radius: 0px;
+}
+
+.work-row {
+    padding: 50px 0 20px 0;
 }
 
 

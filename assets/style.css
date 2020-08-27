@@ -107,7 +107,7 @@ header nav ul li a {
 
 
 /* Class rules for targeted styling */
-.ui-container {
+.header-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -135,6 +135,22 @@ header nav ul li a {
     font-style: normal;
     font-weight: bold;
     text-shadow: 0 0 10px var(black);
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 65%;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+.row {
+    text-align: center;
+    padding: 0 100px 0 100px;
 }
 
 .aboutme-heading {
@@ -362,7 +378,7 @@ header nav ul li a {
         rgba(0, 0, 0, 0.1)
       ), url("../assets/images/hero-image.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 }
 
 .jumbotron h1 {
@@ -399,6 +415,11 @@ header nav ul li a {
     transition: 0.1s;
 }
 
+.img {
+    border-radius: 50%;
+    margin: 50px 0px 50px 0px;
+}
+
 /* #nav-contact {
     margin-right: 100px;
 } */
@@ -431,15 +452,26 @@ header nav ul li a {
     justify-content: space-around;
 }
 
-.row {
+/* .row {
     width: 100%;
     margin: 0 0 0 0;
-    justify-content: space-evenly;
-}
+    display: flex;
+    justify-content: center;
+} */
 
 .card {
     background-color: transparent;
-    /* border: none; */
+    border: none;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.card-body {
+    border: none;
 }
 
 .card-heading-box {
@@ -480,9 +512,9 @@ header nav ul li a {
     background-position: center;
 }
 
-.container {
+/* .container {
     justify-content: space-between;
-}
+} */
 
 .card-heading-box-work {
     border: none;

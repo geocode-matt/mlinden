@@ -30,7 +30,8 @@ body {
     color: var(--primary-color);
     font-size: 14px;
     line-height: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: nunito-sans;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 header {
@@ -150,8 +151,86 @@ header nav ul li a {
 
 .row {
     text-align: center;
-    padding: 0 100px 0 100px;
+    padding: 100px 0 100px 0;
 }
+
+.aboutme {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+
+/* ICONS */
+.devicon-javascript-plain {
+    font-size: 5rem;
+}
+
+.devicon-python-plain-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-html5-plain-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-css3-plain-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-visualstudio-plain-wordmark {
+    font-size: 6rem;
+}
+
+.devicon-git-plain {
+    font-size: 5rem;
+}
+
+.devicon-github-plain-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-jquery-plain-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-mysql-plain-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-npm-original-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-sequelize-plain-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-express-original-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-nodejs-plain-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-mongodb-plain-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-react-original-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-bootstrap-plain-wordmark {
+    font-size: 5rem;
+}
+
+.devicon-foundation-plain-wordmark {
+    font-size: 5rem;
+}
+
+
+
 
 .aboutme-heading {
     font-size: 24px;
@@ -417,7 +496,6 @@ header nav ul li a {
 
 .img {
     border-radius: 50%;
-    margin: 50px 0px 50px 0px;
 }
 
 /* #nav-contact {

@@ -1,8 +1,8 @@
 /* page-wide rules */
 :root {
-    --primary-color: whitesmoke;
-    --secondary-color: #22273d;
-    --tertiary-color: coral;
+    --primary-color: rgb(242, 242, 242);
+    --secondary-color: rgb(115, 187, 253);
+    --tertiary-color: rgb(34, 34, 34);;
 }
 
 * {
@@ -26,8 +26,8 @@
 
 /* major html element rules */
 body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
     font-size: 14px;
     line-height: 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -36,8 +36,7 @@ body {
 header {
     padding: 20px;
     font-family: 'Open Sans', sans-serif;
-    background-image: url("../assets/images/headerbg.jpg");
-    background-repeat: repeat;
+    background-color: var(--tertiary-color);
 }
 
 header h1 {
@@ -46,7 +45,6 @@ header h1 {
     display: inline-block;
     padding: 20px auto 20px 50px;
     margin: 20px auto 20px 150px;
-    text-shadow: 0 0 1px var(--secondary-color);
 }
 
 header nav {
@@ -73,15 +71,17 @@ header nav ul li a {
 
 /* section ID rules */
 #hero {
-    height: 400px;
+    height: 200vh;
+    min-height: fit-content;
     width: 100%;
     margin-bottom: 35px;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.1)
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
       ), url("../assets/images/hero-image.jpg");
     background-size: cover;
     background-position: center;
+    background-blend-mode: overlay;
 }
 
 #aboutme {
@@ -107,6 +107,27 @@ header nav ul li a {
 
 
 /* Class rules for targeted styling */
+.ui-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--tertiary-color);
+    opacity: 0.8;
+    color: whitesmoke;
+    position: fixed;
+    top: 0;
+}
+
+.name-container {
+    text-align: left;
+    padding: 0 0 0 200px;
+}
+
+.nav-container {
+    text-align: right;
+    padding: 0 200px 0 0;
+}
+
 .hero-text {
     float: right;
     padding: 350px 150px 50px 0px;
@@ -332,10 +353,10 @@ header nav ul li a {
 
 /*/// TEST WITH BOOTSTRAP */
 .jumbotron {
-    margin: 0 0 0 0;
+    margin: 66px 0 0 0;
     background-color: #212529;
     color: whitesmoke;
-    height: 225px;
+    min-height: 25vh;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.1)
@@ -349,20 +370,38 @@ header nav ul li a {
 }
 
 .navbar {
-    justify-content: flex-end;
-    background-color: #212529;
-    color: whitesmoke;
+    justify-content: center;
+    width: 85%;
 }
 
 .navbar a {
-    color: whitesmoke;
-    font-size: 24px;
-    margin: 10px 20px 10px 20px;
+    color: var(--primary-color);
+    margin: 10px 5px 5px 10px;
 }
 
-#nav-contact {
-    margin-right: 100px;
+.nav-container a:hover {
+    color: var(--secondary-color);;
+    transition: 0.1s;
 }
+
+.header-name {
+    font-size: 32px;
+    padding: 0 10px 0 10px;
+}
+
+.header-links {
+    font-size: 24px;
+    padding: 0 10px 0 10px;
+}
+
+.header-name:hover {
+    color: var(--secondary-color);;
+    transition: 0.1s;
+}
+
+/* #nav-contact {
+    margin-right: 100px;
+} */
 
 #content {
     width: 100%;
@@ -469,6 +508,15 @@ header nav ul li a {
     padding: 50px 0 20px 0;
 }
 
+.fa-linkedin:hover {
+    color: var(--secondary-color);
+    transition: 0.1s;
+}
+
+.fa-github:hover {
+    color: var(--secondary-color);
+    transition: 0.1s;
+}
 
 
 

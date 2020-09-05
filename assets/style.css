@@ -144,7 +144,7 @@ header nav ul li a {
 }
 
 .main-container {
-    width: 65%;
+    width: 75%;
     background-color: var(--tertiary-color);
     color: var(--primary-color);
 }
@@ -157,6 +157,7 @@ header nav ul li a {
 .aboutme {
     font-size: 1.5rem;
     line-height: 1.8rem;
+    width: 100%;
 }
 
 
@@ -227,6 +228,22 @@ header nav ul li a {
 
 .devicon-foundation-plain-wordmark {
     font-size: 5rem;
+}
+
+.technologies-panel {
+    width: 50%;
+}
+
+.technologies {
+    background-color: rgb(255, 255, 255, .4);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+#technologies-icons {
+    padding: 0 10px 20px 10px;
 }
 
 
@@ -496,6 +513,7 @@ header nav ul li a {
 
 .img {
     border-radius: 50%;
+    margin: 10px 10px 20px 10px;
 }
 
 /* #nav-contact {
@@ -518,7 +536,7 @@ header nav ul li a {
 .projects {
     width: 100%;
     height: 60vh;
-    margin: 100px 0px 20px 0px;
+    margin: 0 0px 20px 0px;
     padding: 0 0 0 0;
 }
 
@@ -530,12 +548,13 @@ header nav ul li a {
     justify-content: space-around;
 }
 
-/* .row {
+.row {
     width: 100%;
-    margin: 0 0 0 0;
+    margin: 50px 0 10px 0;
+    padding: 0 0 0 0;
     display: flex;
     justify-content: center;
-} */
+}
 
 .card {
     background-color: transparent;
@@ -615,7 +634,7 @@ header nav ul li a {
 }
 
 .work-row {
-    padding: 50px 0 20px 0;
+    padding: 0 0 20px 0;
 }
 
 .fa-linkedin:hover {
